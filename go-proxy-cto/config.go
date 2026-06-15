@@ -9,7 +9,7 @@ import (
 // 运行时常量
 // ============================================================
 const (
-	ListenAddr     = "127.0.0.1:9091"              // 反代监听地址
+	ListenAddr     = "0.0.0.0:9091"              // 反代监听地址
 	ClerkAPI       = "https://clerk.cto.new"       // Clerk 认证后端
 	EngineAPI      = "https://api.enginelabs.ai"   // Engine Labs REST API
 	EngineWS       = "wss://api.enginelabs.ai"     // Engine Labs WebSocket
