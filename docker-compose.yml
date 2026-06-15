@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  cto-proxy:
+    build: .
+    ports:
+      - "9091:9091"
+    volumes:
+      - cto-data:/data
+    environment:
+      - CTO_BASE_DIR=/data
+      - PROXY_API_KEY=xs2-cto-secret
+    restart: unless-stopped
+
+volumes:
+  cto-data:
